@@ -6,10 +6,16 @@
     android:orientation="vertical">
 
     <android.support.v7.widget.CardView
-        android:layout_margin="@dimen/cardview_compat_inset_shadow"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_margin="@dimen/cardview_compat_inset_shadow"
         app:cardBackgroundColor="@color/colorPrimary">
+
+        <!-- TODO: Add a TextView inside the CardView.
+             TODO: Give it an id of breed_textview.
+             TODO: Set layout_width and layout_height to match size of the CardView
+             TODO: Align text and view to center
+             TODO: Set textSize to 40sp-->
 
     </android.support.v7.widget.CardView>
 
