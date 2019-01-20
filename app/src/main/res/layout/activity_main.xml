@@ -6,5 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <!-- TODO: Add RecyclerView widget
+         TODO: Set layout_width and layout_height values to fill up entire screen-->
 
 </android.support.constraint.ConstraintLayout>
