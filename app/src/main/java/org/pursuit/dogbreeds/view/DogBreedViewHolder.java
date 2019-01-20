@@ -33,16 +33,14 @@ public class DogBreedViewHolder extends RecyclerView.ViewHolder {
     }
 
     public void onBind(final String breed) {
-        breedTextView.setText(breed);
+
         itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                intent = new Intent(itemView.getContext(), DisplayActivity.class);
-                intent.putExtra("breed", breed);
+
                 Log.d(TAG, String.valueOf(sharedPreferences.contains((breed + "_image"))));
                 if (sharedPreferences.contains((breed + "_image"))) {
-                    intent.putExtra("image", sharedPreferences.getString((breed + "_image"), null));
-                    itemView.getContext().startActivity(intent);
+
                 } else {
                     Retrofit retrofit = RetrofitSingleton.getInstance();
                     DogService dogService = retrofit.create(DogService.class);
@@ -51,11 +49,7 @@ public class DogBreedViewHolder extends RecyclerView.ViewHolder {
                         @Override
                         public void onResponse(Call<Dog> call, Response<Dog> response) {
                             Log.d(TAG, "onResponse: " + response.body().getMessage());
-                            intent.putExtra("image", response.body().getMessage());
-                            SharedPreferences.Editor editor = sharedPreferences.edit();
-                            editor.putString(breed+"_image", response.body().getMessage());
-                            editor.commit();
-                            itemView.getContext().startActivity(intent);
+
                         }
 
                         @Override
