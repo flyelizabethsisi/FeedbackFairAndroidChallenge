@@ -4,6 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="100dp"
     android:orientation="vertical">
+    <!--TODO add a text view inside of cardview give it an id of breed_textview -->
 
     <android.support.v7.widget.CardView
         android:layout_margin="@dimen/cardview_compat_inset_shadow"
@@ -11,13 +12,8 @@
         android:layout_height="match_parent"
         app:cardBackgroundColor="@color/colorPrimary">
 
-        <TextView
-            android:id="@+id/breed_textview"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_gravity="center"
-            android:gravity="center"
-            android:textSize="40sp" />
+        <!--TODO set the textviews values for the layout width and layout height to match the size of cardview  -->
+        <!--TODO align text in the center of the view and align view to the center of the screen, set text size to 40 sp-->
 
     </android.support.v7.widget.CardView>
 

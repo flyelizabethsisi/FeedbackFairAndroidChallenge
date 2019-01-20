@@ -10,6 +10,7 @@ public class RetrofitSingleton {
         if (ourInstance != null) {
             return ourInstance;
         }
+        //TODO finish this retrofit builder
         ourInstance = new Retrofit.Builder()
                   .build();
         return ourInstance;

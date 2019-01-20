@@ -8,6 +8,7 @@ import retrofit2.http.GET;
 import retrofit2.http.Path;
 
 public interface DogService {
+    //TODO fill in the endpoints for getDogBreeds and getDogImage call
     @GET()
     Call<Breeds> getDogBreeds();
 

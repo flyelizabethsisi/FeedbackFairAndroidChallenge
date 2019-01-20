@@ -40,7 +40,8 @@ public class DogBreedViewHolder extends RecyclerView.ViewHolder {
 
                 Log.d(TAG, String.valueOf(sharedPreferences.contains((breed + "_image"))));
                 if (sharedPreferences.contains((breed + "_image"))) {
-
+                    // TODO if shared preferences contains dog breed image
+                    // TODO create intent and send breed image_url to DisplayActivity
                 } else {
                     Retrofit retrofit = RetrofitSingleton.getInstance();
                     DogService dogService = retrofit.create(DogService.class);
@@ -49,7 +50,8 @@ public class DogBreedViewHolder extends RecyclerView.ViewHolder {
                         @Override
                         public void onResponse(Call<Dog> call, Response<Dog> response) {
                             Log.d(TAG, "onResponse: " + response.body().getMessage());
-
+                            //TODO add the image url to shared preferences with the key breed_name + image
+                            //TODO add url to intent and start display activity
                         }
 
                         @Override
