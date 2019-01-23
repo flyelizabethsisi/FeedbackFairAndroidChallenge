@@ -21,12 +21,11 @@ public class DogBreedAdapter extends RecyclerView.Adapter<DogBreedViewHolder> {
     @NonNull
     @Override
     public DogBreedViewHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int i) {
-        //TODO inflate view and return new viewholder
+        //TODO inflate view and return new ViewHolder
     }
 
     @Override
     public void onBindViewHolder(@NonNull DogBreedViewHolder dogBreedViewHolder, int i) {
-      //TODO pass current string in the list to the dogviewholder
         dogBreedViewHolder
     }
 

@@ -18,15 +18,10 @@ public class DisplayActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_display);
-        /* TODO: Create xml layout for DisplayActivity in res folder using layout type of your choice
-           TODO: Name this layout activity_display.xml
-           TODO: Change background color to a color of your choice
-           TODO: Add TextView to display breed & align the view to the center of the screen
-           TODO: Add ImageView to display dog image & align view to the center of the screen */
-
-
         breedTextView = findViewById(R.id.selected_breed_textview);
         beedImageView = findViewById(R.id.random_dog_imageview);
+
+        // TODO Set text into breedTextView
         // TODO use picasso to load image url into imageview
     }
 }

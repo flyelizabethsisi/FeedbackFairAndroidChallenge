@@ -26,14 +26,13 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         recyclerView = findViewById(R.id.breed_recyclerview);
         Retrofit retrofit = RetrofitSingleton.getInstance();
-        //TODO Instantiate retrofit service
-        Call<Breeds> puppy = dogService.getDogBreeds();
+1        Call<Breeds> puppy = dogService.getDogBreeds();
         puppy.enqueue(new Callback<Breeds>() {
             @Override
             public void onResponse(Call<Breeds> call, Response<Breeds> response) {
                 Log.d(TAG, "onResponse: " + response.body().getMessage());
                 recyclerView.setLayoutManager(new LinearLayoutManager(getApplicationContext()));
-                //TODO feed response data to recyclerview adapter
+                //TODO feed response data to RecyclerView Adapter
             }
 
             @Override
