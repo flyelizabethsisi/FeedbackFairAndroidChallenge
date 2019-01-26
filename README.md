@@ -12,4 +12,4 @@ Fellows will work round robin style to complete tasks; meaning each person takes
 
 ### Version:
 Android Studio v3.3
-Gradle v3.2.1
+Gradle v3.3.0
